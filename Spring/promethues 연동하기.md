@@ -34,9 +34,9 @@ management:
 ![image](https://user-images.githubusercontent.com/54339804/188322621-c0f96ced-5737-4f19-9bff-8f3bad2d6c5a.png)
 
 * 프로메테우스에서 target 설정은 prometheus.yml 에서 Spring boot 서버의 타겟을 설정한다.
-    static_configs:
-      - targets: ["localhost:8080"]
-      
+	static_configs:
+      		- targets: ["localhost:8080"]
+      	metrics_path: '/actuator/prometheus' 
       
 * 프로메테우스 실행 후 기본 port는 9090이다.
 
