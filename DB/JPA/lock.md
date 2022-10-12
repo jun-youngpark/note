@@ -44,9 +44,11 @@ update를 하기전에 버전이 적절한지 체크하도록 합니다.
 
 # LockMode 종류
 적용방법
-``` @Transactional
+``` 
+@Transactional
 @Lock(value = LockModeType.PESSIMISTIC_WRITE) //여기
-public int decreasePrice(String name, int price)``` 
+public int decreasePrice(String name, int price)
+``` 
 
 ## LockModeType.PESSIMISTIC_WRITE
 일반적인 옵션. 데이터베이스에 쓰기 락
