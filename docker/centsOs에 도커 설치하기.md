@@ -21,3 +21,10 @@ GPG 키를 수락하라는 메시지가 표시되면 지문이 일치하는지 �
 이 명령은 Docker를 설치하지만 Docker를 시작하지는 않습니다. 또한 docker그룹을 생성하지만 기본적으로 그룹에 사용자를 추가하지는 않습니다.
  
  
+3. 도커를 시작
+
+``` sudo systemctl start docker ```
+
+4.도커 실행 확인
+
+``` sudo docker run hello-world```
