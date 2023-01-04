@@ -4,7 +4,7 @@
 ``` docker pull mcr.microsoft.com/mssql/server:2022-latest ```
 
 2. docker 계정설정하기
-`` sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<Mnwise4210#>" \
+``` sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<Mnwise4210#>" \
    -p 1433:1433 --name wiseu --hostname wiseu \
    -e 'TZ=Asia/Seoul' \
    -d \
