@@ -10,3 +10,9 @@
 링크 정보를 동적으로 바꿀 수 있다. 버저닝 할 필요가 없음(v1,v2,v3)
 
 
+# Domain 만들기
+@data를 사용할 경우 순환 참조 문제가 발생할수 있으므로 id값만 equals , hashcode 할수있도록 
+id값만 equals 가능하도록 한다.
+```
+@EqualsAndHashCode(of = "id")
+```
