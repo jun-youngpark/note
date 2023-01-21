@@ -16,3 +16,20 @@ id값만 equals 가능하도록 한다.
 ```
 @EqualsAndHashCode(of = "id")
 ```
+
+# Enum entity 만들때 주의사항
+EnumType의 기본은 ORDINAL인데, ORDINAL은 열거체 상수 숫자값을 반환한다.
+중간에 순서가 바뀌면 버그가 유발될수 있으므로 String형을 사용한다
+
+```
+  @Enumerated(**EnumType.STRING**)
+    private EventStatus eventStatus = EventStatus.DRAFT;
+```
+
+# ModelMapper
+DTO - > 도메인 객체로 복사 해주는 라이브러리
+https://modelmapper.org/getting-started/
+```
+ ModelMapper modelMapper = new ModelMapper();
+ OrderDTO orderDTO = modelMapper.map(order, OrderDTO.class);
+```
