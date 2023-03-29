@@ -12,3 +12,25 @@ CREATE USER wiseu8 IDENTIFIED BY wiseu8 DEFAULT TABLESPACE wiseu;
 
 ## Grant 권한 주기
 GRANT CONNECT,resource,dba TO wiseu8;
+
+## 오라클 +docker timezon 변경
+실행중인 Docker Container에 bash로 들어갑니다.
+```
+  $ sudo docker exec -u 0 -it oracle bash
+```
+
+ 
+
+시스템의 localtime을 아래의 명령어로 변경하고 bash에서 나갑니다.
+```
+  # cd /etc
+  # rm -f localtime
+  # ln -s /usr/share/zoneinfo/Asia/Seoul localtime
+  # exit
+ ```
+
+Docker Container를 재시작합니다.
+```
+  $ sudo docker restart oracle
+```
+확인은 sysdate로 합니다. CURRENT_DATE는 client의 시간을 따릅니다.
