@@ -34,8 +34,15 @@ docker update --restart=unless-stopped oracle
 ```
 
 	# 전체 설정 확인
-  ```
+  
 docker inspect elastic
+```
+"RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            }
+```	    
+
 # RestartPolicy만 확인
 docker inspect elastic | grep -A 3 "RestartPolicy"
-```
+
