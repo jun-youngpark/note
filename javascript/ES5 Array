@@ -1,0 +1,30 @@
+# ES5에서 지원하는 Array Method 중 비슷한 성격의 every와 some 
+
+1. Array.prototype.every()
+every()는 배열의 각 엘리먼트에 대해서 테스트 함수의 반환 값이 모두 true인지 확인합니다.
+모든 case가 true일때 true를 반환합니다.
+하나라도 false이면 반환 값은 **false입니다**.
+기존 배열 값은 변경되지 않습니다.
+
+```
+    match.forEach(it => {
+                   if(bodyList.every(item => item.name === it)){
+                       bodyList.push({name: it, id: it});
+                   }
+               });
+```               
+
+2. Array.prototype.some()
+some()은 배열의 각 엘리먼트에 대해서 테스트 함수의 반환 값이 하나라도 true가 있는지 확인합니다.
+하나라도 true가 발생하면 **true를** 반환합니다.
+모두 false인 경우만 false를 반환합니다.
+every가 and 조건이라면 some은 or 조건입니다.
+기존 배열 값은 변경되지 않습니다.
+ ```
+    match.forEach(it => {
+                   if(bodyList.some(item => item.name === it)){
+                       bodyList.push({name: it, id: it});
+                   }
+               });
+```               
+
