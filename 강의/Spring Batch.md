@@ -8,3 +8,14 @@
 ALWAYS: 스크립트를 항상 실행합니다. RDBMS 설정이 되어 있을 경우 내장 DB보다 우선적으로 실행됩니다.
 EMBEDDED: 내장 DB일 때만 실행되며 스키마가 자동 생성됩니다. (기본값)
 NEVER: 스크립트를 항상 실행하지 않습니다. 운영에서 수동으로 스크립트 생성 후 설정하는 것을 권장합니다. 내장 DB일 경우 스크립트가 생성이 안되기 때문에 오류가 발생합니다.
+
+# Job
+- 배치 계층 구조에서 배치작업 자체를 의미
+1) simpleJob 
+2) FlowJob
+
+# JobInstance
+JOB이 실행 될때 생성 되는 객체 (BATCH_JOB_INSTANCE  table 저장)
+- JobInstance 생성 및 실행
+처음 시작하는 Job + JobParameter 일 경우 새로운 JobInstance 생성
+이전과 동일한 Job + JobParameter  으로 실행 할 경우 이미 존재하는 JobInstance 리턴
