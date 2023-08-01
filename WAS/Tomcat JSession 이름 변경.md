@@ -1,22 +1,23 @@
 # Tomcat Session 이름 변경
 
 
-Tomcat 6.x 이하버전
+# Tomcat 6.x 이하버전
+
 http://tomcat.apache.org/tomcat-6.0-doc/config/systemprops.html
 자바 환경변수 값에 아래 내용 추가.
-
 -Dorg.apache.catalina.SESSION_COOKIE_NAME=MYSESSIONID
 -Dorg.apache.catalina.SESSION_PARAMETER_NAME=MYSESSIONID
-Tomcat 7.x 버전
+
+# Tomcat 7.x 버전
 Context 의 sessionCookieName attribute 로 추가되어있다.
 
 <Context sessionCookieName="MYSESSIONID" cookies="true">
-Tomcat 8.x 이상
-이 방법 사용시 해당 Web Application이 Servlet 3.0 이상으로 선언되어야 함 (web.xml 참조)
 
+# Tomcat 8.x 이상
+이 방법 사용시 해당 Web Application이 Servlet 3.0 이상으로 선언되어야 함 (web.xml 참조)
 WebApplication 의 web.xml 내의 session-config - cookie-config - name 속성 선언
 
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://java.sun.com/xml/ns/javaee"
@@ -76,3 +77,4 @@ WebApplication 의 web.xml 내의 session-config - cookie-config - name 속성 �
   <!-- Clustering context -->
   <distributable />
 </web-app>
+```
