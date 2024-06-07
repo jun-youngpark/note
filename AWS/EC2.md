@@ -1,7 +1,10 @@
-# EC2(Elastic Compute Cloud)란?
+# EC2(Elastic Compute Cloud)란? 
+EC2는 Elastic Compute Cloud를 줄여서 부르는 이름입니다.
+알파벳 E가 한 번 나오고 C가 연속으로 2번 나오기 때문에 EC2라고 이름을 지은 것입니다.
+
 EC2는 AWS에서 제공하는 클라우드 컴퓨팅 서비스다.
 
-# 요금 저앷ㄱ
+# 요금 정액제
 
 1)온디맨드
 * 선결제 금액이나 장기 약정 없이 저렴하고 유연하게 Amazon EC2를 사용하기 원하는 사용자
