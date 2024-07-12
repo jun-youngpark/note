@@ -16,15 +16,16 @@ HEYGEN : 비디오 번역하여 해석
 플랫폼이 된 오픈 AI
 GPTs 사용법 - 챗GPT로 5분만에 나만의 챗봇 만드는 방법
 
-GPT 종류
-1.CHATGPT- 문장 생성
-2.DALL-E ,STABLITY =이미지 관련
-3.AVIA,OPENAI -JUEKBOX 노래 관련(편곡등)
-4.(OPENAI)SORA- 사실적인 영상 생성
-5.Seller Canvas - 온라인 마케팅(상세페이지)
-6.pixell - 카메라를 선명하게
-7.tooToon - 만화/웹툰 생성
-8.Duet AI - 구글 워크스페이스를 위한 듀엣 AI
+# GPT 종류
+* 1.CHATGPT- 문장 생성
+* 2.DALL-E ,STABLITY =이미지 관련
+* 3.AVIA,OPENAI -JUEKBOX 노래 관련(편곡등)
+* 4.(OPENAI)SORA- 사실적인 영상 생성
+* 5.Seller Canvas - 온라인 마케팅(상세페이지)
+* 6.pixell - 카메라를 선명하게
+* 7.tooToon - 만화/웹툰 생성
+* 8.Duet AI - 구글 워크스페이스를 위한 듀엣 AI
+
 의료
 웨어러블 로봇기업(Wirobotics)
 
