@@ -9,6 +9,8 @@ BigQuery에서는 SQL을 사용하여 데이터를 삽입할 수 있습니다. `
 ```sql
 INSERT INTO dataset_name.table_name (column1, column2, column3)
 VALUES ('value1', 'value2', 'value3');
+```
+
 2. Data Ingestion (데이터 업로드)
 CSV, JSON 파일 업로드
 CSV, JSON 형식의 파일을 Google Cloud Storage에 업로드한 후 BigQuery 테이블로 로드할 수 있습니다.
@@ -23,6 +25,7 @@ Google Sheets에서 직접 BigQuery로 데이터를 가져올 수 있습니다.
 BigQuery의 스트리밍 삽입 기능을 사용하여 실시간으로 데이터를 삽입할 수 있습니다. 이는 실시간 데이터 분석이 필요한 경우에 유용합니다.
 
 python 
+```
 from google.cloud import bigquery
 
 client = bigquery.Client()
@@ -39,6 +42,7 @@ if errors == []:
     print("New rows have been added.")
 else:
     print("Encountered errors while inserting rows: {}".format(errors))
+```
 4. Data Transfer Service (데이터 전송 서비스)
 Scheduled Queries (예약 쿼리)
 정기적으로 실행되는 쿼리를 통해 데이터를 삽입하거나 업데이트할 수 있습니다.
