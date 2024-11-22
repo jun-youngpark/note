@@ -47,7 +47,9 @@ UML에는 시스템의 **구조**와 **행위**를 표현하기 위한 다양한
    - 주로 **이벤트**에 의해 상태가 변하는 객체의 동작을 모델링할 때 사용됩니다.
 
 ![image](https://github.com/user-attachments/assets/f9ab438d-d52c-4db8-b4b8-9d364dcb118a)
- 
+
+ ![image](https://github.com/user-attachments/assets/8b9582be-f11b-4f7d-a4e0-22ade66024a5)
+
 * 상태 (state) :
 상태에 있는 동안 수행되는 시작,종료,수행 활동을 가진다.
 entry : 특정 상태로 진입할 때 최초 한번 실행하는 동작 (진입동작)
