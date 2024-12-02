@@ -23,4 +23,7 @@
 * LangChain : 파이썬 프레임워크
 
  ## 베드락 agent
- 
+ * Bedrock flows - GUI 로 생성형 AI 워크플로우 만들기 가능
+ * 지식저장소 : 메모리 DB , ELK ,S3로 사용가능
+ * Bedrock studio : 환경을 구성 후 개발자에게 제공
+ * 보안 기능 
