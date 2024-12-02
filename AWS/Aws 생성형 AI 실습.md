@@ -1,3 +1,5 @@
+노션주소 : http://bit.ly/aws-ltmb-edu
+
 ## Foundation 유형
 
 * Vector를 도출하는 과정이 Embeddings
