@@ -9,3 +9,10 @@
 https://marketplace.eclipse.org/content/assistai-chatgpt-plugin-eclipse-ide/help
 
 
+
+요구 하는 번들을 아래 경로에 수동 설치진행하였으나 이클립스에서 인식 불가
+/eclipse/plugins/
+/eclipse/dropins/plugins/
+/eclipse/dropin/
+
+![image](https://github.com/user-attachments/assets/6d75cd00-e883-45bf-a6fb-1d00ca73c5f4)
